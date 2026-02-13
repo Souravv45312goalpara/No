@@ -1,1 +1,100 @@
-# No
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="line"><h1>Heyyy</h1></div>
+    <!-- <div class="card"></div> -->
+    <div id="btn"><button>Yes</button></div>
+    <div id="btn2"><button>No</button></div>
+</body>
+<style>
+    div#line {
+        text-align: center;
+    margin: 51px -458px 220px 148px;
+    color: #914f90;
+    }
+    div#btn {
+        display: flex;
+        border: 1px solid pink;
+        /* background-color: rgb(143, 57, 71); */
+        margin-block-end: -150px;
+        margin-left: 20px;
+        margin: 18px 31px 23px 168px;
+    height: 40px;
+    width: 60px;    border-radius: 10px; padding: 0px 100px 0px 100px;
+    }
+     div#btn button {
+        background-color: rgb(49, 167, 100);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+     div#btn2 button {
+        background-color: rgb(98, 67, 175);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 9px 24px;
+    }   
+     div#btn2 {
+            height: 40px;
+        width: 60px;
+        display: flex;
+        border: 1px solid pink;
+        color: rgb(82, 65, 68);
+        margin-left: 20px;
+        margin: 10px 76px 16px 59px;
+        border-radius: 10px;
+    }
+    div.card {
+        height: 70px;
+        width: 60px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lightgreen;
+    }
+</style>
+<script>
+    let btn = document.getElementById("btn");
+    let btn2 = document.getElementById("btn2");
+    let line = document.getElementsByTagName("h1")[0];
+    // btn.addEventListener("click", function() {
+    //     line.style.margin = "51px -458px 220px 148px;";
+    // });
+    let margin = "10px 76px 16px 59px";
+     btn2.addEventListener("mouseenter", function() {
+        if (margin === "10px 76px 16px 59px") {
+            margin = "-69px 76px 343px 61px";
+            btn2.style.margin = margin;
+        }
+        else if (margin === "-69px 76px 343px 61px") {
+             margin = "47px 60px -215px 60px";
+             btn2.style.margin = margin;
+        }
+        else if (margin === "47px 60px -215px 60px") {
+             margin = "10px -93px 479px 59px;";
+             btn2.style.margin = margin;
+        }
+        else if (margin === "10px -93px 479px 59px;") {
+             margin = "10px 76px 16px 59px";
+             btn2.style.margin = margin;
+        }
+     });
+</script>
+</html>
